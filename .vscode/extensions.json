@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "steoates.autoimport",
+        "esbenp.prettier-vscode",
+        "christian-kohler.path-intellisense"
+    ]
+}
