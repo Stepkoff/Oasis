@@ -45,6 +45,12 @@ export const App = () => {
                     </SelectContent>
                 </Select>
             </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                cum blanditiis labore natus expedita assumenda eum illo fuga,
+                aperiam fugit. Aperiam nemo quod blanditiis ducimus explicabo
+                eius necessitatibus eos dolor.
+            </div>
         </div>
     );
 };
