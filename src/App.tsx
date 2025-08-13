@@ -13,10 +13,23 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
+import { useLayoutEffect } from 'react';
+import { setWindowInnerHeightIntoCssVariable } from '@/lib/utils';
 
 export const App = () => {
+    useLayoutEffect(() => {
+        window.addEventListener('resize', setWindowInnerHeightIntoCssVariable);
+        setWindowInnerHeightIntoCssVariable();
+        return () => {
+            window.removeEventListener(
+                'resize',
+                setWindowInnerHeightIntoCssVariable,
+            );
+        };
+    }, []);
+
     return (
-        <div>
+        <div className="bg-sky-200">
             <div className="mb-8 mt-8">
                 <Button>Submit</Button>
             </div>

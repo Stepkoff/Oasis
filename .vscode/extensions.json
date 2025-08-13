@@ -2,6 +2,7 @@
     "recommendations": [
         "steoates.autoimport",
         "esbenp.prettier-vscode",
-        "christian-kohler.path-intellisense"
+        "christian-kohler.path-intellisense",
+        "bradlc.vscode-tailwindcss"
     ]
 }
