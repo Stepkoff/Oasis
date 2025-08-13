@@ -29,7 +29,7 @@ const RootComponent = () => {
                         About
                     </Link>
                 </div>
-                <div>
+                <div className="border-2 p-4">
                     <ThemeToggle />
                 </div>
                 <hr />
