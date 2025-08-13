@@ -118,3 +118,7 @@
         @apply bg-background text-foreground;
     }
 }
+
+@theme {
+    --spacing-custom-screen: calc(var(--vh, 1vh) * 100);
+}

@@ -29,8 +29,8 @@ export const App = () => {
     }, []);
 
     return (
-        <div className="bg-sky-200">
-            <div className="mb-8 mt-8">
+        <div className="bg-sky-200 min-h-custom-screen">
+            <div className="mb-8 ">
                 <Button>Submit</Button>
             </div>
             <div className="">
@@ -61,8 +61,7 @@ export const App = () => {
             <div>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
                 cum blanditiis labore natus expedita assumenda eum illo fuga,
-                aperiam fugit. Aperiam nemo quod blanditiis ducimus explicabo
-                eius necessitatibus eos dolor.
+                12313!!!!!
             </div>
         </div>
     );
