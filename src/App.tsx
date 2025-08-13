@@ -15,9 +15,11 @@ import {
 } from '@/components/ui/select';
 import { useLayoutEffect } from 'react';
 import { setWindowInnerHeightIntoCssVariable } from '@/lib/utils';
+import { ThemeToggle } from './components/theme-toggle';
 
 export const App = () => {
     useLayoutEffect(() => {
+        // 100vh bug fix for ios
         window.addEventListener('resize', setWindowInnerHeightIntoCssVariable);
         setWindowInnerHeightIntoCssVariable();
         return () => {
@@ -29,7 +31,13 @@ export const App = () => {
     }, []);
 
     return (
-        <div className="bg-sky-200 min-h-custom-screen">
+        <div className="min-h-custom-screen border-4 border-sky-400">
+            <header className="p-8 bg-cyan-100 flex justify-between">
+                <div>Logo</div>
+                <div>
+                    <ThemeToggle />
+                </div>
+            </header>
             <div className="mb-8 ">
                 <Button>Submit</Button>
             </div>
@@ -61,7 +69,7 @@ export const App = () => {
             <div>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
                 cum blanditiis labore natus expedita assumenda eum illo fuga,
-                12313!!!!!
+                12313!!!!! 123
             </div>
         </div>
     );
