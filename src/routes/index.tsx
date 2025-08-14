@@ -1,13 +1,15 @@
 import { createFileRoute } from '@tanstack/react-router';
+import { useTranslation } from 'react-i18next';
 
 export const Route = createFileRoute('/')({
     component: Index,
 });
 
 function Index() {
+    const { t } = useTranslation();
     return (
         <div className="p-2">
-            <h3>Welcome Home! 123</h3>
+            <h3>{t('greeting')}</h3>
         </div>
     );
 }
