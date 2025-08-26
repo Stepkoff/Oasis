@@ -20,7 +20,7 @@ const RootComponent = () => {
 
     return (
         <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-            <div className="min-h-custom-screen">
+            <div className="min-h-custom-screen border-2 border-red-400">
                 <div className="p-2 flex gap-2">
                     <Link to="/" className="[&.active]:font-bold">
                         Home
